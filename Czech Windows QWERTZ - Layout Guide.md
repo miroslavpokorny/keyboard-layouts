@@ -1,13 +1,13 @@
-# Czech Windows QWERTY - macOS Keyboard Layout
+# Czech Windows QWERTZ - macOS Keyboard Layout
 
-A macOS keyboard layout that replicates the Windows Czech (KBDCZ) keyboard behavior on macOS, adapted for ANSI 104-key external USB keyboards with **QWERTY** letter arrangement.
+A macOS keyboard layout that replicates the Windows Czech (KBDCZ) keyboard behavior on macOS, adapted for ANSI 104-key external USB keyboards with **QWERTZ** letter arrangement.
 
 ## Key Differences from Standard macOS Czech
 
 - Uses **Option key** as AltGr equivalent (since macOS has no dedicated Right Alt / AltGr)
-- QWERTY letter positions (not QWERTZ)
+- QWERTZ letter positions (Z and Y swapped compared to US QWERTY)
 - Windows-style punctuation placement
-- Command key layer preserves US QWERTY mapping so all macOS shortcuts (Cmd+Z/X/C/V/A/S etc.) work correctly
+- Command key layer preserves QWERTZ mapping so all macOS shortcuts (Cmd+Z/X/C/V/A/S etc.) work correctly on the matching physical key positions
 
 ---
 
@@ -33,7 +33,7 @@ A macOS keyboard layout that replicates the Windows Czech (KBDCZ) keyboard behav
 
 ### Letter Rows (Base / Shift)
 
-Standard QWERTY: `q w e r t y u i o p` / `a s d f g h j k l` / `z x c v b n m`
+QWERTZ arrangement: `q w e r t z u i o p` / `a s d f g h j k l` / `y x c v b n m`
 
 Shift produces uppercase letters as expected.
 
@@ -63,7 +63,7 @@ Hold **Option** (either left or right) and press the key.
 | `C` | `&`    | `S` | `đ`    |
 | `V` | `@`    | `D` | `Đ`    |
 | `K` | `ł`    | `L` | `Ł`    |
-| `;` | `$`    | `'` | `ß`    |
+| `;` (ů) | `$`    | `'` | `ß`    |
 | `,` | `<`    | `.` | `>`    |
 | `/` | `*`    | `[` | `÷`    |
 | `]` | `×`    |     |        |
@@ -135,14 +135,14 @@ Pressing any other key after a dead key outputs the diacritic mark followed by t
 1. Copy the `.keylayout` file to your user keyboard layouts folder:
    ```bash
    mkdir -p ~/Library/Keyboard\ Layouts
-   cp "Czech Windows QWERTY.keylayout" ~/Library/Keyboard\ Layouts/
+   cp "Czech Windows QWERTZ.keylayout" ~/Library/Keyboard\ Layouts/
    ```
 
 2. **Log out and log back in** (or restart) for macOS to detect the new layout.
 
 3. Go to **System Settings > Keyboard > Input Sources** (or **System Preferences > Keyboard > Input Sources** on older macOS).
 
-4. Click the **+** button, search for **"Czech Windows QWERTY"** under the **Others** category.
+4. Click the **+** button, search for **"Czech Windows QWERTZ"** under the **Others** category.
 
 5. Add it and select it from the input source menu in the menu bar.
 
@@ -150,7 +150,7 @@ Pressing any other key after a dead key outputs the diacritic mark followed by t
 
 1. Copy to the system keyboard layouts folder:
    ```bash
-   sudo cp "Czech Windows QWERTY.keylayout" /Library/Keyboard\ Layouts/
+   sudo cp "Czech Windows QWERTZ.keylayout" /Library/Keyboard\ Layouts/
    ```
 
 2. Restart the Mac.
@@ -161,9 +161,9 @@ Pressing any other key after a dead key outputs the diacritic mark followed by t
 
 1. Remove the file:
    ```bash
-   rm ~/Library/Keyboard\ Layouts/Czech\ Windows\ QWERTY.keylayout
+   rm ~/Library/Keyboard\ Layouts/Czech\ Windows\ QWERTZ.keylayout
    # or for system-wide:
-   sudo rm /Library/Keyboard\ Layouts/Czech\ Windows\ QWERTY.keylayout
+   sudo rm /Library/Keyboard\ Layouts/Czech\ Windows\ QWERTZ.keylayout
    ```
 2. Log out and back in.
 
@@ -174,7 +174,7 @@ Pressing any other key after a dead key outputs the diacritic mark followed by t
 - **Switching layouts**: Use `Ctrl+Space` or `Fn+Globe` to switch between input sources (configurable in System Settings > Keyboard).
 - **Menu bar indicator**: Enable "Show Input menu in menu bar" in Keyboard settings to see which layout is active and switch with a click.
 - **Testing**: Use the built-in **Keyboard Viewer** (accessible from the Input menu in the menu bar) to visualize the layout while holding modifier keys.
-- **Custom icon**: You can place a `.icns` file with the same name (`Czech Windows QWERTY.icns`) in the same directory to give the layout a custom icon.
+- **Custom icon**: You can place a `.icns` file with the same name (`Czech Windows QWERTZ.icns`) in the same directory to give the layout a custom icon.
 
 ## Known Limitations
 

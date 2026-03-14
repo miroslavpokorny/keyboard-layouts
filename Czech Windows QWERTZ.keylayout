@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--
-    Czech Windows QWERTY - macOS Keyboard Layout
+    Czech Windows QWERTZ - macOS Keyboard Layout
     Mimics Windows Czech (KBDCZ) keyboard behavior on macOS.
-    Uses QWERTY letter arrangement (not QWERTZ).
+    Uses QWERTZ letter arrangement (Y and Z swapped vs US QWERTY).
     Option key acts as AltGr for special characters.
     Dead keys on = key: base = dead acute (´), shift = dead caron (ˇ).
 -->
-<keyboard group="126" id="-28421" name="Czech Windows QWERTY" maxout="2">
+<keyboard group="126" id="-28421" name="Czech Windows QWERTZ" maxout="2">
     <layouts>
         <layout first="0" last="17" modifiers="commonModifiers" mapSet="ANSI"/>
     </layouts>
@@ -39,12 +39,12 @@
             <modifier keys="anyOption anyShift" />
             <modifier keys="caps anyOption anyShift" />
         </keyMapSelect>
-        <!-- Index 6: Command (US base for keyboard shortcuts) -->
+        <!-- Index 6: Command (QWERTZ base for keyboard shortcuts) -->
         <keyMapSelect mapIndex="6">
             <modifier keys="command" />
             <modifier keys="caps command" />
         </keyMapSelect>
-        <!-- Index 7: Command + Shift (US shift for keyboard shortcuts) -->
+        <!-- Index 7: Command + Shift (QWERTZ shift for keyboard shortcuts) -->
         <keyMapSelect mapIndex="7">
             <modifier keys="anyShift command" />
             <modifier keys="caps anyShift command" />
@@ -55,7 +55,7 @@
 
         <!-- ============================================================ -->
         <!-- Index 0: Base (no modifiers)                                 -->
-        <!-- Number row: Czech diacritics. Letters: QWERTY lowercase.     -->
+        <!-- Number row: Czech diacritics. Letters: QWERTZ lowercase.     -->
         <!-- ============================================================ -->
         <keyMap index="0">
             <!-- Number row -->
@@ -73,13 +73,13 @@
             <key code="27" output="="/>               <!-- Minus → = -->
             <key code="24" action="deadAcute"/>       <!-- Equal → dead ´ -->
 
-            <!-- Top letter row (QWERTY) -->
+            <!-- Top letter row (QWERTZ) -->
             <key code="12" output="q"/>               <!-- Q -->
             <key code="13" output="w"/>               <!-- W -->
             <key code="14" action="e_lower"/>         <!-- E (dead key target) -->
             <key code="15" action="r_lower"/>         <!-- R (dead key target) -->
             <key code="17" action="t_lower"/>         <!-- T (dead key target) -->
-            <key code="16" action="y_lower"/>         <!-- Y (dead key target) -->
+            <key code="16" action="z_lower"/>         <!-- Z (dead key target) – QWERTZ -->
             <key code="32" action="u_lower"/>         <!-- U (dead key target) -->
             <key code="34" action="i_lower"/>         <!-- I (dead key target) -->
             <key code="31" action="o_lower"/>         <!-- O (dead key target) -->
@@ -102,7 +102,7 @@
             <key code="39" output="&#x00A7;"/>        <!-- ' → § -->
 
             <!-- Bottom row -->
-            <key code="6" action="z_lower"/>          <!-- Z (dead key target) -->
+            <key code="6" action="y_lower"/>          <!-- Y (dead key target) – QWERTZ -->
             <key code="7" output="x"/>                <!-- X -->
             <key code="8" action="c_lower"/>          <!-- C (dead key target) -->
             <key code="9" output="v"/>                <!-- V -->
@@ -143,7 +143,7 @@
 
         <!-- ============================================================ -->
         <!-- Index 1: Shift                                               -->
-        <!-- Number row: digits. Letters: QWERTY uppercase.               -->
+        <!-- Number row: digits. Letters: QWERTZ uppercase.               -->
         <!-- ============================================================ -->
         <keyMap index="1">
             <!-- Number row -->
@@ -161,13 +161,13 @@
             <key code="27" output="%"/>               <!-- Minus+Shift → % -->
             <key code="24" action="deadCaron"/>       <!-- Equal+Shift → dead ˇ -->
 
-            <!-- Top letter row -->
+            <!-- Top letter row (QWERTZ) -->
             <key code="12" output="Q"/>
             <key code="13" output="W"/>
             <key code="14" action="E_upper"/>
             <key code="15" action="R_upper"/>
             <key code="17" action="T_upper"/>
-            <key code="16" action="Y_upper"/>
+            <key code="16" action="Z_upper"/>         <!-- QWERTZ -->
             <key code="32" action="U_upper"/>
             <key code="34" action="I_upper"/>
             <key code="31" action="O_upper"/>
@@ -190,7 +190,7 @@
             <key code="39" output="!"/>               <!-- '+Shift → ! -->
 
             <!-- Bottom row -->
-            <key code="6" action="Z_upper"/>
+            <key code="6" action="Y_upper"/>          <!-- QWERTZ -->
             <key code="7" output="X"/>
             <key code="8" action="C_upper"/>
             <key code="9" output="V"/>
@@ -249,13 +249,13 @@
             <key code="27" output="="/>
             <key code="24" action="deadAcute"/>
 
-            <!-- Top letter row (uppercase with caps) -->
+            <!-- Top letter row (uppercase with caps, QWERTZ) -->
             <key code="12" output="Q"/>
             <key code="13" output="W"/>
             <key code="14" action="E_upper"/>
             <key code="15" action="R_upper"/>
             <key code="17" action="T_upper"/>
-            <key code="16" action="Y_upper"/>
+            <key code="16" action="Z_upper"/>         <!-- QWERTZ -->
             <key code="32" action="U_upper"/>
             <key code="34" action="I_upper"/>
             <key code="31" action="O_upper"/>
@@ -278,7 +278,7 @@
             <key code="39" output="&#x00A7;"/>
 
             <!-- Bottom row -->
-            <key code="6" action="Z_upper"/>
+            <key code="6" action="Y_upper"/>          <!-- QWERTZ -->
             <key code="7" output="X"/>
             <key code="8" action="C_upper"/>
             <key code="9" output="V"/>
@@ -337,13 +337,13 @@
             <key code="27" output="%"/>
             <key code="24" action="deadCaron"/>
 
-            <!-- Top letter row (lowercase with caps+shift) -->
+            <!-- Top letter row (lowercase with caps+shift, QWERTZ) -->
             <key code="12" output="q"/>
             <key code="13" output="w"/>
             <key code="14" action="e_lower"/>
             <key code="15" action="r_lower"/>
             <key code="17" action="t_lower"/>
-            <key code="16" action="y_lower"/>
+            <key code="16" action="z_lower"/>         <!-- QWERTZ -->
             <key code="32" action="u_lower"/>
             <key code="34" action="i_lower"/>
             <key code="31" action="o_lower"/>
@@ -366,7 +366,7 @@
             <key code="39" output="!"/>
 
             <!-- Bottom row -->
-            <key code="6" action="z_lower"/>
+            <key code="6" action="y_lower"/>          <!-- QWERTZ -->
             <key code="7" output="x"/>
             <key code="8" action="c_lower"/>
             <key code="9" output="v"/>
@@ -408,6 +408,7 @@
         <!-- ============================================================ -->
         <!-- Index 4: Option (AltGr equivalent)                           -->
         <!-- Special characters: brackets, braces, @, #, €, etc.          -->
+        <!-- All keys defined to prevent macOS fallback to system layout.  -->
         <!-- ============================================================ -->
         <keyMap index="4">
             <!-- Number row: diacritic marks (non-dead, direct output) -->
@@ -425,31 +426,42 @@
             <key code="27" output="&#x00A8;"/>        <!-- Opt+Minus → ¨ (diaeresis) -->
             <key code="24" output="&#x00B8;"/>        <!-- Opt+Equal → ¸ (cedilla) -->
 
-            <!-- Top letter row -->
+            <!-- Top letter row (all keys defined) -->
             <key code="12" output="\"/>               <!-- Opt+Q → \ -->
             <key code="13" output="|"/>               <!-- Opt+W → | -->
             <key code="14" output="&#x20AC;"/>        <!-- Opt+E → € -->
+            <key code="15" output=""/>                <!-- Opt+R → (none) -->
+            <key code="17" output=""/>                <!-- Opt+T → (none) -->
+            <key code="16" output=""/>                <!-- Opt+Z → (none) QWERTZ -->
+            <key code="32" output=""/>                <!-- Opt+U → (none) -->
+            <key code="34" output=""/>                <!-- Opt+I → (none) -->
+            <key code="31" output=""/>                <!-- Opt+O → (none) -->
             <key code="35" output=""/>                <!-- Opt+P → (none) -->
             <key code="33" output="&#x00F7;"/>        <!-- Opt+[ → ÷ -->
             <key code="30" output="&#x00D7;"/>        <!-- Opt+] → × -->
             <key code="42" output=""/>                <!-- Opt+\ → (none) -->
 
-            <!-- Home row -->
+            <!-- Home row (all keys defined) -->
+            <key code="0" output=""/>                 <!-- Opt+A → (none) -->
             <key code="1" output="&#x0111;"/>         <!-- Opt+S → đ -->
             <key code="2" output="&#x0110;"/>         <!-- Opt+D → Đ -->
             <key code="3" output="["/>                <!-- Opt+F → [ -->
             <key code="5" output="]"/>                <!-- Opt+G → ] -->
+            <key code="4" output=""/>                 <!-- Opt+H → (none) -->
+            <key code="38" output=""/>                <!-- Opt+J → (none) -->
             <key code="40" output="&#x0142;"/>        <!-- Opt+K → ł -->
             <key code="37" output="&#x0141;"/>        <!-- Opt+L → Ł -->
-            <key code="41" output="$"/>               <!-- Opt+; → $ -->
+            <key code="41" output="&#x0024;"/>        <!-- Opt+; (ů) → $ -->
             <key code="39" output="&#x00DF;"/>        <!-- Opt+' → ß -->
 
-            <!-- Bottom row -->
+            <!-- Bottom row (all keys defined) -->
+            <key code="6" output=""/>                 <!-- Opt+Y → (none) QWERTZ -->
             <key code="7" output="#"/>                <!-- Opt+X → # -->
             <key code="8" output="&#x0026;"/>         <!-- Opt+C → & -->
             <key code="9" output="@"/>                <!-- Opt+V → @ -->
             <key code="11" output="{"/>               <!-- Opt+B → { -->
             <key code="45" output="}"/>               <!-- Opt+N → } -->
+            <key code="46" output=""/>                <!-- Opt+M → (none) -->
             <key code="43" output="&#x003C;"/>        <!-- Opt+, → < -->
             <key code="47" output="&#x003E;"/>        <!-- Opt+. → > -->
             <key code="44" output="*"/>               <!-- Opt+/ → * -->
@@ -460,6 +472,8 @@
             <key code="48" output="&#x0009;"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
+            <key code="76" output="&#x0003;"/>
+            <key code="71" output="&#x001B;"/>
 
             <!-- Numpad (unchanged) -->
             <key code="82" output="0"/>
@@ -483,6 +497,7 @@
         <!-- ============================================================ -->
         <!-- Index 5: Option + Shift                                      -->
         <!-- Uppercase Czech diacritics and additional characters.         -->
+        <!-- All keys defined to prevent macOS fallback to system layout.  -->
         <!-- ============================================================ -->
         <keyMap index="5">
             <!-- Number row: uppercase Czech diacritics -->
@@ -500,27 +515,42 @@
             <key code="27" output="&#x00A8;"/>        <!-- Opt+Shift+Minus → ¨ -->
             <key code="24" output="&#x00B8;"/>        <!-- Opt+Shift+Equal → ¸ -->
 
-            <!-- Letters (Option+Shift same as Option but uppercase where applicable) -->
+            <!-- Top letter row (all keys defined) -->
             <key code="12" output="\"/>
             <key code="13" output="|"/>
             <key code="14" output="&#x20AC;"/>
+            <key code="15" output=""/>
+            <key code="17" output=""/>
+            <key code="16" output=""/>                <!-- QWERTZ -->
+            <key code="32" output=""/>
+            <key code="34" output=""/>
+            <key code="31" output=""/>
+            <key code="35" output=""/>
             <key code="33" output="&#x00F7;"/>
             <key code="30" output="&#x00D7;"/>
+            <key code="42" output=""/>
 
+            <!-- Home row (all keys defined) -->
+            <key code="0" output=""/>
             <key code="1" output="&#x0110;"/>         <!-- Opt+Shift+S → Đ -->
             <key code="2" output="&#x0111;"/>         <!-- Opt+Shift+D → đ -->
             <key code="3" output="{"/>                <!-- Opt+Shift+F → { -->
             <key code="5" output="}"/>                <!-- Opt+Shift+G → } -->
+            <key code="4" output=""/>
+            <key code="38" output=""/>
             <key code="40" output="&#x0141;"/>        <!-- Opt+Shift+K → Ł -->
             <key code="37" output="&#x0142;"/>        <!-- Opt+Shift+L → ł -->
-            <key code="41" output="$"/>
+            <key code="41" output="&#x0024;"/>        <!-- Opt+Shift+; (ů) → $ -->
             <key code="39" output="&#x00DF;"/>
 
+            <!-- Bottom row (all keys defined) -->
+            <key code="6" output=""/>                 <!-- QWERTZ -->
             <key code="7" output="#"/>
             <key code="8" output="&#x0026;"/>
             <key code="9" output="@"/>
             <key code="11" output="{"/>
             <key code="45" output="}"/>
+            <key code="46" output=""/>
             <key code="43" output="&#x003C;"/>
             <key code="47" output="&#x003E;"/>
             <key code="44" output="*"/>
@@ -531,6 +561,8 @@
             <key code="48" output="&#x0009;"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
+            <key code="76" output="&#x0003;"/>
+            <key code="71" output="&#x001B;"/>
 
             <!-- Numpad -->
             <key code="82" output="0"/>
@@ -552,8 +584,8 @@
         </keyMap>
 
         <!-- ============================================================ -->
-        <!-- Index 6: Command (US base for keyboard shortcuts)            -->
-        <!-- Maps to standard US layout so Cmd+Z/X/C/V etc. work.        -->
+        <!-- Index 6: Command (QWERTZ base for keyboard shortcuts)        -->
+        <!-- Maps letter keys to QWERTZ so Cmd+Z works on Z position.     -->
         <!-- ============================================================ -->
         <keyMap index="6">
             <key code="0" output="a"/>
@@ -562,7 +594,7 @@
             <key code="3" output="f"/>
             <key code="4" output="h"/>
             <key code="5" output="g"/>
-            <key code="6" output="z"/>
+            <key code="6" output="y"/>                <!-- QWERTZ: physical Z-pos → y -->
             <key code="7" output="x"/>
             <key code="8" output="c"/>
             <key code="9" output="v"/>
@@ -571,7 +603,7 @@
             <key code="13" output="w"/>
             <key code="14" output="e"/>
             <key code="15" output="r"/>
-            <key code="16" output="y"/>
+            <key code="16" output="z"/>               <!-- QWERTZ: physical Y-pos → z -->
             <key code="17" output="t"/>
             <key code="18" output="1"/>
             <key code="19" output="2"/>
@@ -613,7 +645,7 @@
         </keyMap>
 
         <!-- ============================================================ -->
-        <!-- Index 7: Command + Shift (US shift for keyboard shortcuts)   -->
+        <!-- Index 7: Command + Shift (QWERTZ shift for shortcuts)        -->
         <!-- ============================================================ -->
         <keyMap index="7">
             <key code="0" output="A"/>
@@ -622,7 +654,7 @@
             <key code="3" output="F"/>
             <key code="4" output="H"/>
             <key code="5" output="G"/>
-            <key code="6" output="Z"/>
+            <key code="6" output="Y"/>                <!-- QWERTZ -->
             <key code="7" output="X"/>
             <key code="8" output="C"/>
             <key code="9" output="V"/>
@@ -631,12 +663,12 @@
             <key code="13" output="W"/>
             <key code="14" output="E"/>
             <key code="15" output="R"/>
-            <key code="16" output="Y"/>
+            <key code="16" output="Z"/>               <!-- QWERTZ -->
             <key code="17" output="T"/>
             <key code="18" output="!"/>
             <key code="19" output="@"/>
             <key code="20" output="#"/>
-            <key code="21" output="$"/>
+            <key code="21" output="&#x0024;"/>
             <key code="22" output="^"/>
             <key code="23" output="%"/>
             <key code="24" output="+"/>
