@@ -43,7 +43,7 @@ Shift produces uppercase letters as expected.
 |:-------------|:------|:------|
 | `[`          | `ú`   | `/`   |
 | `]`          | `)`   | `(`   |
-| `\`          | `\`   | `\|`  |
+| `\`          | `¨`   | `'`   |
 | `;`          | `ů`   | `"`   |
 | `'`          | `§`   | `!`   |
 | `,`          | `,`   | `?`   |
@@ -66,7 +66,7 @@ Hold **Option** (either left or right) and press the key.
 | `;` (ů) | `$`    | `'` | `ß`    |
 | `,` | `<`    | `.` | `>`    |
 | `/` | `*`    | `[` | `÷`    |
-| `]` | `×`    |     |        |
+| `]` | `×`    | `\` | `¤`    |
 
 **Option + Number Row** (diacritic marks, direct output):
 

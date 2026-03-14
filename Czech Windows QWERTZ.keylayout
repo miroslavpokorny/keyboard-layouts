@@ -9,7 +9,7 @@
 -->
 <keyboard group="126" id="-28421" name="Czech Windows QWERTZ" maxout="2">
     <layouts>
-        <layout first="0" last="17" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="0" last="255" modifiers="commonModifiers" mapSet="ANSI"/>
     </layouts>
 
     <modifierMap id="commonModifiers" defaultIndex="0">
@@ -86,7 +86,7 @@
             <key code="35" output="p"/>               <!-- P -->
             <key code="33" output="&#x00FA;"/>        <!-- [ → ú -->
             <key code="30" output=")"/>               <!-- ] → ) -->
-            <key code="42" output="\"/>               <!-- \ → \ -->
+            <key code="42" output="&#x00A8;"/>        <!-- \ → ¨ (diaeresis mark) -->
 
             <!-- Home row -->
             <key code="0" action="a_lower"/>          <!-- A (dead key target) -->
@@ -174,7 +174,7 @@
             <key code="35" output="P"/>
             <key code="33" output="/"/>               <!-- [+Shift → / -->
             <key code="30" output="("/>               <!-- ]+Shift → ( -->
-            <key code="42" output="|"/>               <!-- \+Shift → | -->
+            <key code="42" output="'"/>                <!-- \+Shift → ' (apostrophe) -->
 
             <!-- Home row -->
             <key code="0" action="A_upper"/>
@@ -262,7 +262,7 @@
             <key code="35" output="P"/>
             <key code="33" output="&#x00DA;"/>        <!-- Caps+[ → Ú -->
             <key code="30" output=")"/>
-            <key code="42" output="\"/>
+            <key code="42" output="&#x00A8;"/>        <!-- \ → ¨ (diaeresis mark) -->
 
             <!-- Home row -->
             <key code="0" action="A_upper"/>
@@ -350,7 +350,7 @@
             <key code="35" output="p"/>
             <key code="33" output="/"/>
             <key code="30" output="("/>
-            <key code="42" output="|"/>
+            <key code="42" output="'"/>                <!-- \+Caps+Shift → ' (apostrophe) -->
 
             <!-- Home row -->
             <key code="0" action="a_lower"/>
@@ -426,42 +426,42 @@
             <key code="27" output="&#x00A8;"/>        <!-- Opt+Minus → ¨ (diaeresis) -->
             <key code="24" output="&#x00B8;"/>        <!-- Opt+Equal → ¸ (cedilla) -->
 
-            <!-- Top letter row (all keys defined) -->
+            <!-- Top letter row -->
             <key code="12" output="\"/>               <!-- Opt+Q → \ -->
             <key code="13" output="|"/>               <!-- Opt+W → | -->
             <key code="14" output="&#x20AC;"/>        <!-- Opt+E → € -->
-            <key code="15" output=""/>                <!-- Opt+R → (none) -->
-            <key code="17" output=""/>                <!-- Opt+T → (none) -->
-            <key code="16" output=""/>                <!-- Opt+Z → (none) QWERTZ -->
-            <key code="32" output=""/>                <!-- Opt+U → (none) -->
-            <key code="34" output=""/>                <!-- Opt+I → (none) -->
-            <key code="31" output=""/>                <!-- Opt+O → (none) -->
-            <key code="35" output=""/>                <!-- Opt+P → (none) -->
+            <key code="15" output="r"/>               <!-- Opt+R → r (no AltGr mapping) -->
+            <key code="17" output="t"/>               <!-- Opt+T → t (no AltGr mapping) -->
+            <key code="16" output="z"/>               <!-- Opt+Z → z (no AltGr mapping) QWERTZ -->
+            <key code="32" output="u"/>               <!-- Opt+U → u (no AltGr mapping) -->
+            <key code="34" output="i"/>               <!-- Opt+I → i (no AltGr mapping) -->
+            <key code="31" output="o"/>               <!-- Opt+O → o (no AltGr mapping) -->
+            <key code="35" output="p"/>               <!-- Opt+P → p (no AltGr mapping) -->
             <key code="33" output="&#x00F7;"/>        <!-- Opt+[ → ÷ -->
             <key code="30" output="&#x00D7;"/>        <!-- Opt+] → × -->
-            <key code="42" output=""/>                <!-- Opt+\ → (none) -->
+            <key code="42" output="&#x00A4;"/>        <!-- Opt+\ → ¤ (currency sign) -->
 
-            <!-- Home row (all keys defined) -->
-            <key code="0" output=""/>                 <!-- Opt+A → (none) -->
+            <!-- Home row -->
+            <key code="0" output="a"/>                <!-- Opt+A → a (no AltGr mapping) -->
             <key code="1" output="&#x0111;"/>         <!-- Opt+S → đ -->
             <key code="2" output="&#x0110;"/>         <!-- Opt+D → Đ -->
             <key code="3" output="["/>                <!-- Opt+F → [ -->
             <key code="5" output="]"/>                <!-- Opt+G → ] -->
-            <key code="4" output=""/>                 <!-- Opt+H → (none) -->
-            <key code="38" output=""/>                <!-- Opt+J → (none) -->
+            <key code="4" output="h"/>                <!-- Opt+H → h (no AltGr mapping) -->
+            <key code="38" output="j"/>               <!-- Opt+J → j (no AltGr mapping) -->
             <key code="40" output="&#x0142;"/>        <!-- Opt+K → ł -->
             <key code="37" output="&#x0141;"/>        <!-- Opt+L → Ł -->
             <key code="41" output="&#x0024;"/>        <!-- Opt+; (ů) → $ -->
             <key code="39" output="&#x00DF;"/>        <!-- Opt+' → ß -->
 
-            <!-- Bottom row (all keys defined) -->
-            <key code="6" output=""/>                 <!-- Opt+Y → (none) QWERTZ -->
+            <!-- Bottom row -->
+            <key code="6" output="y"/>                <!-- Opt+Y → y (no AltGr mapping) QWERTZ -->
             <key code="7" output="#"/>                <!-- Opt+X → # -->
             <key code="8" output="&#x0026;"/>         <!-- Opt+C → & -->
             <key code="9" output="@"/>                <!-- Opt+V → @ -->
             <key code="11" output="{"/>               <!-- Opt+B → { -->
             <key code="45" output="}"/>               <!-- Opt+N → } -->
-            <key code="46" output=""/>                <!-- Opt+M → (none) -->
+            <key code="46" output="m"/>               <!-- Opt+M → m (no AltGr mapping) -->
             <key code="43" output="&#x003C;"/>        <!-- Opt+, → < -->
             <key code="47" output="&#x003E;"/>        <!-- Opt+. → > -->
             <key code="44" output="*"/>               <!-- Opt+/ → * -->
@@ -515,42 +515,42 @@
             <key code="27" output="&#x00A8;"/>        <!-- Opt+Shift+Minus → ¨ -->
             <key code="24" output="&#x00B8;"/>        <!-- Opt+Shift+Equal → ¸ -->
 
-            <!-- Top letter row (all keys defined) -->
+            <!-- Top letter row -->
             <key code="12" output="\"/>
             <key code="13" output="|"/>
             <key code="14" output="&#x20AC;"/>
-            <key code="15" output=""/>
-            <key code="17" output=""/>
-            <key code="16" output=""/>                <!-- QWERTZ -->
-            <key code="32" output=""/>
-            <key code="34" output=""/>
-            <key code="31" output=""/>
-            <key code="35" output=""/>
+            <key code="15" output="R"/>
+            <key code="17" output="T"/>
+            <key code="16" output="Z"/>               <!-- QWERTZ -->
+            <key code="32" output="U"/>
+            <key code="34" output="I"/>
+            <key code="31" output="O"/>
+            <key code="35" output="P"/>
             <key code="33" output="&#x00F7;"/>
             <key code="30" output="&#x00D7;"/>
-            <key code="42" output=""/>
+            <key code="42" output="&#x00A4;"/>        <!-- Opt+Shift+\ → ¤ (currency sign) -->
 
-            <!-- Home row (all keys defined) -->
-            <key code="0" output=""/>
+            <!-- Home row -->
+            <key code="0" output="A"/>
             <key code="1" output="&#x0110;"/>         <!-- Opt+Shift+S → Đ -->
             <key code="2" output="&#x0111;"/>         <!-- Opt+Shift+D → đ -->
             <key code="3" output="{"/>                <!-- Opt+Shift+F → { -->
             <key code="5" output="}"/>                <!-- Opt+Shift+G → } -->
-            <key code="4" output=""/>
-            <key code="38" output=""/>
+            <key code="4" output="H"/>
+            <key code="38" output="J"/>
             <key code="40" output="&#x0141;"/>        <!-- Opt+Shift+K → Ł -->
             <key code="37" output="&#x0142;"/>        <!-- Opt+Shift+L → ł -->
             <key code="41" output="&#x0024;"/>        <!-- Opt+Shift+; (ů) → $ -->
             <key code="39" output="&#x00DF;"/>
 
-            <!-- Bottom row (all keys defined) -->
-            <key code="6" output=""/>                 <!-- QWERTZ -->
+            <!-- Bottom row -->
+            <key code="6" output="Y"/>                <!-- QWERTZ -->
             <key code="7" output="#"/>
             <key code="8" output="&#x0026;"/>
             <key code="9" output="@"/>
             <key code="11" output="{"/>
             <key code="45" output="}"/>
-            <key code="46" output=""/>
+            <key code="46" output="M"/>
             <key code="43" output="&#x003C;"/>
             <key code="47" output="&#x003E;"/>
             <key code="44" output="*"/>
