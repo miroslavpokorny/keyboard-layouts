@@ -60,6 +60,7 @@
         <keyMap index="0">
             <!-- Number row -->
             <key code="50" output=";"/>               <!-- Grave → ; -->
+            <key code="10" output=";"/>               <!-- Grave (non-Apple USB keyboards) → ; -->
             <key code="18" output="+"/>               <!-- 1 → + -->
             <key code="19" output="&#x011B;"/>        <!-- 2 → ě -->
             <key code="20" output="&#x0161;"/>        <!-- 3 → š -->
@@ -148,6 +149,7 @@
         <keyMap index="1">
             <!-- Number row -->
             <key code="50" output="&#x00B0;"/>        <!-- Grave+Shift → ° -->
+            <key code="10" output="&#x00B0;"/>        <!-- Grave+Shift (non-Apple USB) → ° -->
             <key code="18" output="1"/>               <!-- 1+Shift → 1 -->
             <key code="19" output="2"/>               <!-- 2+Shift → 2 -->
             <key code="20" output="3"/>               <!-- 3+Shift → 3 -->
@@ -236,6 +238,7 @@
         <keyMap index="2">
             <!-- Number row (uppercase diacritics with caps) -->
             <key code="50" output=";"/>
+            <key code="10" output=";"/>
             <key code="18" output="+"/>
             <key code="19" output="&#x011A;"/>        <!-- Caps+2 → Ě -->
             <key code="20" output="&#x0160;"/>        <!-- Caps+3 → Š -->
@@ -324,6 +327,7 @@
         <keyMap index="3">
             <!-- Number row (digits, same as shift) -->
             <key code="50" output="&#x00B0;"/>
+            <key code="10" output="&#x00B0;"/>
             <key code="18" output="1"/>
             <key code="19" output="2"/>
             <key code="20" output="3"/>
@@ -413,6 +417,7 @@
         <keyMap index="4">
             <!-- Number row: diacritic marks (non-dead, direct output) -->
             <key code="50" output="`"/>               <!-- Opt+Grave → ` -->
+            <key code="10" output="`"/>               <!-- Opt+Grave (non-Apple USB) → ` -->
             <key code="18" output="~"/>               <!-- Opt+1 → ~ -->
             <key code="19" output="&#x02C7;"/>        <!-- Opt+2 → ˇ (caron mark) -->
             <key code="20" output="^"/>               <!-- Opt+3 → ^ -->
@@ -502,6 +507,7 @@
         <keyMap index="5">
             <!-- Number row: uppercase Czech diacritics -->
             <key code="50" output="~"/>               <!-- Opt+Shift+Grave → ~ -->
+            <key code="10" output="~"/>               <!-- Opt+Shift+Grave (non-Apple USB) → ~ -->
             <key code="18" output="1"/>               <!-- Opt+Shift+1 → 1 -->
             <key code="19" output="&#x011A;"/>        <!-- Opt+Shift+2 → Ě -->
             <key code="20" output="&#x0160;"/>        <!-- Opt+Shift+3 → Š -->
@@ -638,6 +644,7 @@
             <key code="48" output="&#x0009;"/>
             <key code="49" output="&#x0020;"/>
             <key code="50" output="`"/>
+            <key code="10" output="`"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
             <key code="76" output="&#x0003;"/>
@@ -698,6 +705,7 @@
             <key code="48" output="&#x0009;"/>
             <key code="49" output="&#x0020;"/>
             <key code="50" output="~"/>
+            <key code="10" output="~"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
             <key code="76" output="&#x0003;"/>
