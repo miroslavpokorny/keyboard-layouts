@@ -30,14 +30,20 @@
             <modifier keys="caps anyShift" />
         </keyMapSelect>
         <!-- Index 4: Option (AltGr equivalent) -->
+        <!-- Also matches Control+Option for Windows Right Alt via Parsec -->
         <keyMapSelect mapIndex="4">
             <modifier keys="anyOption" />
             <modifier keys="caps anyOption" />
+            <modifier keys="control anyOption" />
+            <modifier keys="caps control anyOption" />
         </keyMapSelect>
         <!-- Index 5: Option + Shift -->
+        <!-- Also matches Control+Option+Shift for Windows Right Alt via Parsec -->
         <keyMapSelect mapIndex="5">
             <modifier keys="anyOption anyShift" />
             <modifier keys="caps anyOption anyShift" />
+            <modifier keys="control anyOption anyShift" />
+            <modifier keys="caps control anyOption anyShift" />
         </keyMapSelect>
         <!-- Index 6: Command (QWERTZ base for keyboard shortcuts) -->
         <keyMapSelect mapIndex="6">
