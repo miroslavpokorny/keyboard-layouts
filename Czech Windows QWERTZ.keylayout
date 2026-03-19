@@ -129,6 +129,17 @@
             <key code="76" output="&#x0003;"/>        <!-- Numpad Enter -->
             <key code="71" output="&#x001B;"/>        <!-- Clear -->
 
+            <!-- Navigation keys -->
+            <key code="115" output="&#x0001;"/>        <!-- Home -->
+            <key code="116" output="&#x000B;"/>        <!-- Page Up -->
+            <key code="117" output="&#x007F;"/>        <!-- Forward Delete -->
+            <key code="119" output="&#x0004;"/>        <!-- End -->
+            <key code="121" output="&#x000C;"/>        <!-- Page Down -->
+            <key code="123" output="&#x001C;"/>        <!-- Left Arrow -->
+            <key code="124" output="&#x001D;"/>        <!-- Right Arrow -->
+            <key code="125" output="&#x001F;"/>        <!-- Down Arrow -->
+            <key code="126" output="&#x001E;"/>        <!-- Up Arrow -->
+
             <!-- Numpad -->
             <key code="82" output="0"/>
             <key code="83" output="1"/>
@@ -217,6 +228,17 @@
             <key code="53" output="&#x001B;"/>
             <key code="76" output="&#x0003;"/>
             <key code="71" output="&#x001B;"/>
+
+            <!-- Navigation keys -->
+            <key code="115" output="&#x0001;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
+            <key code="119" output="&#x0004;"/>
+            <key code="121" output="&#x000C;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
 
             <!-- Numpad (same as base) -->
             <key code="82" output="0"/>
@@ -307,6 +329,17 @@
             <key code="76" output="&#x0003;"/>
             <key code="71" output="&#x001B;"/>
 
+            <!-- Navigation keys -->
+            <key code="115" output="&#x0001;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
+            <key code="119" output="&#x0004;"/>
+            <key code="121" output="&#x000C;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
+
             <!-- Numpad -->
             <key code="82" output="0"/>
             <key code="83" output="1"/>
@@ -395,6 +428,17 @@
             <key code="53" output="&#x001B;"/>
             <key code="76" output="&#x0003;"/>
             <key code="71" output="&#x001B;"/>
+
+            <!-- Navigation keys -->
+            <key code="115" output="&#x0001;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
+            <key code="119" output="&#x0004;"/>
+            <key code="121" output="&#x000C;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
 
             <!-- Numpad -->
             <key code="82" output="0"/>
@@ -486,6 +530,17 @@
             <key code="76" output="&#x0003;"/>
             <key code="71" output="&#x001B;"/>
 
+            <!-- Navigation keys -->
+            <key code="115" output="&#x0001;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
+            <key code="119" output="&#x0004;"/>
+            <key code="121" output="&#x000C;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
+
             <!-- Numpad (unchanged) -->
             <key code="82" output="0"/>
             <key code="83" output="1"/>
@@ -576,6 +631,17 @@
             <key code="76" output="&#x0003;"/>
             <key code="71" output="&#x001B;"/>
 
+            <!-- Navigation keys -->
+            <key code="115" output="&#x0001;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
+            <key code="119" output="&#x0004;"/>
+            <key code="121" output="&#x000C;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
+
             <!-- Numpad -->
             <key code="82" output="0"/>
             <key code="83" output="1"/>
@@ -655,6 +721,17 @@
             <key code="53" output="&#x001B;"/>
             <key code="76" output="&#x0003;"/>
             <key code="71" output="&#x001B;"/>
+
+            <!-- Navigation keys -->
+            <key code="115" output="&#x0001;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
+            <key code="119" output="&#x0004;"/>
+            <key code="121" output="&#x000C;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
         </keyMap>
 
         <!-- ============================================================ -->
@@ -716,6 +793,17 @@
             <key code="53" output="&#x001B;"/>
             <key code="76" output="&#x0003;"/>
             <key code="71" output="&#x001B;"/>
+
+            <!-- Navigation keys -->
+            <key code="115" output="&#x0001;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
+            <key code="119" output="&#x0004;"/>
+            <key code="121" output="&#x000C;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
         </keyMap>
 
     </keyMapSet>
