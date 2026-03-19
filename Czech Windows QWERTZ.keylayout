@@ -7,7 +7,7 @@
     Option key acts as AltGr for special characters.
     Dead keys on = key: base = dead acute (´), shift = dead caron (ˇ).
 -->
-<keyboard group="38" id="-28421" name="Czech Windows QWERTZ" maxout="2">
+<keyboard group="29" id="-28421" name="Czech Windows QWERTZ" maxout="2">
     <layouts>
         <layout first="0" last="255" modifiers="commonModifiers" mapSet="ANSI"/>
     </layouts>
