@@ -132,7 +132,7 @@
             <!-- Navigation keys -->
             <key code="115" output="&#x0001;"/>        <!-- Home -->
             <key code="116" output="&#x000B;"/>        <!-- Page Up -->
-            <key code="117" output="&#x007F;"/>        <!-- Forward Delete -->
+            <key code="117" output="&#xF728;"/>        <!-- Forward Delete (fn+Backspace) -->
             <key code="119" output="&#x0004;"/>        <!-- End -->
             <key code="121" output="&#x000C;"/>        <!-- Page Down -->
             <key code="123" output="&#x001C;"/>        <!-- Left Arrow -->
@@ -232,7 +232,7 @@
             <!-- Navigation keys -->
             <key code="115" output="&#x0001;"/>
             <key code="116" output="&#x000B;"/>
-            <key code="117" output="&#x007F;"/>
+            <key code="117" output="&#xF728;"/>
             <key code="119" output="&#x0004;"/>
             <key code="121" output="&#x000C;"/>
             <key code="123" output="&#x001C;"/>
@@ -332,7 +332,7 @@
             <!-- Navigation keys -->
             <key code="115" output="&#x0001;"/>
             <key code="116" output="&#x000B;"/>
-            <key code="117" output="&#x007F;"/>
+            <key code="117" output="&#xF728;"/>
             <key code="119" output="&#x0004;"/>
             <key code="121" output="&#x000C;"/>
             <key code="123" output="&#x001C;"/>
@@ -432,7 +432,7 @@
             <!-- Navigation keys -->
             <key code="115" output="&#x0001;"/>
             <key code="116" output="&#x000B;"/>
-            <key code="117" output="&#x007F;"/>
+            <key code="117" output="&#xF728;"/>
             <key code="119" output="&#x0004;"/>
             <key code="121" output="&#x000C;"/>
             <key code="123" output="&#x001C;"/>
@@ -533,7 +533,7 @@
             <!-- Navigation keys -->
             <key code="115" output="&#x0001;"/>
             <key code="116" output="&#x000B;"/>
-            <key code="117" output="&#x007F;"/>
+            <key code="117" output="&#xF728;"/>
             <key code="119" output="&#x0004;"/>
             <key code="121" output="&#x000C;"/>
             <key code="123" output="&#x001C;"/>
@@ -634,7 +634,7 @@
             <!-- Navigation keys -->
             <key code="115" output="&#x0001;"/>
             <key code="116" output="&#x000B;"/>
-            <key code="117" output="&#x007F;"/>
+            <key code="117" output="&#xF728;"/>
             <key code="119" output="&#x0004;"/>
             <key code="121" output="&#x000C;"/>
             <key code="123" output="&#x001C;"/>
@@ -725,7 +725,7 @@
             <!-- Navigation keys -->
             <key code="115" output="&#x0001;"/>
             <key code="116" output="&#x000B;"/>
-            <key code="117" output="&#x007F;"/>
+            <key code="117" output="&#xF728;"/>
             <key code="119" output="&#x0004;"/>
             <key code="121" output="&#x000C;"/>
             <key code="123" output="&#x001C;"/>
@@ -797,7 +797,7 @@
             <!-- Navigation keys -->
             <key code="115" output="&#x0001;"/>
             <key code="116" output="&#x000B;"/>
-            <key code="117" output="&#x007F;"/>
+            <key code="117" output="&#xF728;"/>
             <key code="119" output="&#x0004;"/>
             <key code="121" output="&#x000C;"/>
             <key code="123" output="&#x001C;"/>
