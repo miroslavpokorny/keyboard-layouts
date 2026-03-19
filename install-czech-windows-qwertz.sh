@@ -4,9 +4,9 @@
 # and installs it to the macOS keyboard layouts directory.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/miroslavpokorny/keyboard-layouts/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/miroslavpokorny/keyboard-layouts/main/install-czech-windows-qwertz.sh | bash
 #   or
-#   ./install.sh
+#   ./install-czech-windows-qwertz.sh
 #
 
 set -euo pipefail
