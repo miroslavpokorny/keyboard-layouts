@@ -22,7 +22,8 @@ TEMP_DIR=$(mktemp -d)
 trap 'rm -rf "$TEMP_DIR"' EXIT
 
 echo "Downloading from GitHub..."
-if ! curl -fsSL "$REPO_URL/$LAYOUT_FILE" -o "$TEMP_DIR/$LAYOUT_FILE"; then
+ENCODED_FILE="${LAYOUT_FILE// /%20}"
+if ! curl -fsSL "$REPO_URL/$ENCODED_FILE" -o "$TEMP_DIR/$LAYOUT_FILE"; then
     echo "Error: Failed to download the keyboard layout." >&2
     exit 1
 fi
